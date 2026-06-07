@@ -64,29 +64,29 @@ function ServicesPage() {
 
       <section className="pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs uppercase tracking-[0.3em] text-primary">What We Build</p>
-          <h1 className="mt-3 font-display uppercase text-5xl sm:text-6xl lg:text-7xl text-balance max-w-3xl">
+          <p className="text-sm font-medium text-primary">What we build</p>
+          <h1 className="mt-3 font-display text-5xl sm:text-6xl lg:text-7xl text-balance max-w-3xl text-timber leading-[1.05]">
             Six trades. <span className="text-primary">One crew.</span>
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground max-w-2xl">
+          <p className="mt-6 text-lg text-foreground/75 max-w-2xl">
             Whether it&apos;s a deck out back or a full renovation, you get the same standard of
             work — measured, honest, and finished properly.
           </p>
         </div>
       </section>
 
-      <section className="pb-20">
+      <section className="pb-20 bg-stone-warm pt-16 mt-4">
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
             <article
               key={s.title}
-              className="group relative rounded-lg border border-border bg-card/60 p-7 hover:border-primary/50 hover:bg-card transition-all"
+              className="group relative rounded-lg border border-border bg-card p-7 hover:border-primary/50 transition-all shadow-soft"
             >
-              <div className="h-12 w-12 rounded-md bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition">
+              <div className="h-12 w-12 rounded-md bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/15 transition">
                 <s.icon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="mt-6 font-display uppercase text-2xl tracking-wide">{s.title}</h3>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
+              <h3 className="mt-6 font-display text-2xl text-timber">{s.title}</h3>
+              <p className="mt-3 text-sm text-foreground/75 leading-relaxed">{s.desc}</p>
               <div className="mt-6 h-px bg-gradient-to-r from-primary/40 to-transparent" />
             </article>
           ))}
@@ -104,17 +104,17 @@ function ServicesPage() {
             height={896}
           />
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-primary">Not sure what you need?</p>
-            <h2 className="mt-3 font-display uppercase text-4xl sm:text-5xl text-balance">
+            <p className="text-sm font-medium text-primary">Not sure what you need?</p>
+            <h2 className="mt-3 font-display text-4xl sm:text-5xl text-balance text-timber leading-[1.05]">
               Talk to a carpenter, not a salesperson.
             </h2>
-            <p className="mt-5 text-muted-foreground text-lg">
+            <p className="mt-5 text-foreground/75 text-lg">
               Send us a few details about the job and we&apos;ll come back to you with a real quote
               — usually within 24 hours.
             </p>
             <Link
               to="/contact"
-              className="mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:opacity-90 transition"
+              className="mt-8 inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition"
             >
               Get a Free Quote <ArrowRight className="h-4 w-4" />
             </Link>

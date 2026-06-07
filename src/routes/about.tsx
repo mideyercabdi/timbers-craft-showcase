@@ -30,8 +30,8 @@ function AboutPage() {
 
       <section className="pt-32 pb-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
-          <p className="text-xs uppercase tracking-[0.3em] text-primary">About Us</p>
-          <h1 className="mt-3 font-display uppercase text-5xl sm:text-6xl lg:text-7xl text-balance max-w-3xl">
+          <p className="text-sm font-medium text-primary">About us</p>
+          <h1 className="mt-3 font-display text-5xl sm:text-6xl lg:text-7xl text-balance max-w-3xl text-timber leading-[1.05]">
             A small crew. <span className="text-primary">A big standard.</span>
           </h1>
 
@@ -49,7 +49,7 @@ function AboutPage() {
               <p className="mt-3 text-xs text-muted-foreground italic text-center">The crew at the workshop.</p>
             </div>
 
-            <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+            <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
               <p>
                 Raage&apos;s Builders started the way most good things do — with a few friends who
                 liked working with their hands and got tired of seeing rushed, sloppy work passed
@@ -68,7 +68,7 @@ function AboutPage() {
 
               <ul className="pt-4 space-y-3">
                 {values.map((v) => (
-                  <li key={v} className="flex items-start gap-3 text-foreground">
+                  <li key={v} className="flex items-start gap-3 text-timber">
                     <span className="mt-1 h-6 w-6 rounded-full bg-primary/15 border border-primary/40 flex items-center justify-center shrink-0">
                       <Check className="h-3.5 w-3.5 text-primary" />
                     </span>
@@ -80,7 +80,7 @@ function AboutPage() {
               <div className="pt-6">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:opacity-90 transition"
+                  className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground hover:opacity-90 transition"
                 >
                   Work With Us <ArrowRight className="h-4 w-4" />
                 </Link>
