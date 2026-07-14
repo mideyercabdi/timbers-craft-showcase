@@ -7,10 +7,10 @@ import heroImg from "@/assets/hero-carpentry.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Raage's Builders — Built Right. Built to Last." },
+      { title: "Raage's Builders | Builder, Heidelberg" },
       { name: "description", content: "Premium local carpentry crew. Decks, framing, cabinetry, renovations and more. Get a free quote today." },
-      { property: "og:title", content: "Raage's Builders — Built Right. Built to Last." },
-      { property: "og:description", content: "Premium local carpentry crew. Get a free quote today." },
+      { property: "og:title", content: "Raage's Builders | Builder, Heidelberg" },
+      { property: "og:description", content: "Premium local carpentry crew. Decks, framing, cabinetry, renovations and more. Get a free quote today." },
     ],
   }),
   component: HomePage,
